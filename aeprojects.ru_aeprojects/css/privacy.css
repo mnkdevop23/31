@@ -1,0 +1,73 @@
+
+
+body{
+    font-style: normal;
+}
+
+.privacy{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    width: 100%;
+
+    background-color: #f9f9f9;
+}
+
+.privacy__container{
+   padding-left: 412px;
+   padding-right: 317px;
+}
+
+.privacy__container h1{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+
+    color: #000000;
+
+    margin-top: 36px;
+}
+
+.privacy__container p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+
+    color: #000000;
+
+    margin-top: 36px;
+}
+
+.thankyou-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fff;
+
+}
+
+.footer__button-back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px !important; 
+    height: 50px;
+
+
+}
+
+
+@media screen and (max-width: 1400px){
+    .privacy__container{
+        padding-left: 10%;
+        padding-right:  10%;
+     }
+}
+

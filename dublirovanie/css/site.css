@@ -1,0 +1,169 @@
+body,
+html {
+    font-family: 'Comfortaa', cursive;
+}
+
+.brand-logo {
+    height: 64px;
+}
+
+.brand-logo img {
+    height: 100%;
+    padding: 5px 0;
+}
+
+.blue-dark {
+    background-color: #1b233a;
+}
+
+nav.blue-dark .active {
+    background-color: #305299;
+}
+
+.chip {
+    height: auto;
+}
+
+.green-dark {
+    background-color: #ccef67;
+}
+
+.green-light-text {
+    color: #ccef67;
+}
+
+.btn-signuptwo {
+    height: 62px;
+    line-height: 62px;
+    width: 100%;
+}
+
+.btn-flat-border {
+    width: 100%;
+    background-color: transparent !important;
+    border: 2px solid #ccef67;
+    color: #ccef67;
+    height: 62px;
+    line-height: 62px;
+}
+
+.parallax-container {
+    height: 550px;
+}
+
+#signup-one .input-field>label {
+    color: #ffffff;
+}
+
+#signup-one input.valid[type=email]:not(.browser-default),
+#signup-one input.valid[type=text]:not(.browser-default),
+#signup-one input.valid[type=password]:not(.browser-default),
+#signup-two input.valid[type=email]:not(.browser-default),
+#signup-two input.valid[type=text]:not(.browser-default),
+#signup-two input.valid[type=password]:not(.browser-default) {
+    border-bottom: 1px solid #ccef67;
+    -webkit-box-shadow: 0 1px 0 0 #ccef67;
+    box-shadow: 0 1px 0 0 #ccef67;
+}
+
+.sliders {
+    display: flex;
+}
+
+.sliders__coll {
+    flex: 1;
+    padding: 0 20px;
+}
+
+#result {
+    text-align: center
+}
+
+#img img {
+    width: 100%
+}
+
+.result-trade .text-capitalize {
+    text-transform: capitalize !important;
+}
+
+footer {
+    font-size: .8rem;
+}
+
+footer a {
+    text-decoration: underline;
+}
+
+form .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+form .agree {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.signals form .agree {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+form .row .col.m4 {
+    margin-left: 0;
+}
+
+form .agree input {
+    margin-right: 10px;
+    opacity: 1 !important;
+    pointer-events: all !important;
+    position: relative !important
+}
+
+.thank {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.thank .parallax-container {
+    min-height: 550px;
+    height: calc(100vh - 64px - 234px);
+}
+
+@media only screen and (max-width: 769px) {
+    .signals .v-dialog {
+        width: calc(100vw - 48px);
+        top: 58px;
+        left: 0;
+    }
+
+    .signals .nav-mobile,
+    .signals #sidenav-left,
+    #ascrail2000,
+    .nicescroll-cursors,
+    .signals nav .sidenav-trigger {
+        display: none !important;
+    }
+
+    .signals nav.navbar,
+    .signals .v-overlay,
+    .signals .v-dialog__content
+
+    /*.signals ,
+    .signals ,
+    .signals */
+        {
+        width: 100vw;
+    }
+
+    form .row {
+        flex-direction: column;
+    }
+}

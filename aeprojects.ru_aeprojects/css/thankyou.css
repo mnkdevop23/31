@@ -1,0 +1,255 @@
+
+.header-thank{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 129px;
+    width: 100%;
+
+    position: static;
+
+}
+
+.header__logo-mobile{
+    width: 200px;
+    height: auto;
+}
+
+.thankyou{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 80vh;
+
+}
+
+.thankyou__block{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+
+    width: 678px;
+    height: 403px;
+
+    background-color: var(--main-color);
+}
+
+.thankyou__img{
+    position: absolute;
+    right: -180px;
+    bottom: 0;
+}
+
+.thankyou__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    width: 300px;
+}
+
+.thankyou__text h1{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27.6864px;
+    line-height: 34px;
+
+    color: #FFF;
+}
+
+.thankyou__text h2{
+    margin-top: 27.67px;
+  
+    font-weight: 700;
+    font-size: 15.1017px;
+    line-height: 18px;
+    text-align: center;
+
+    color: #FFF;
+}
+
+.thankyou__text p{
+    margin-top: 17.73px;
+    
+    font-size: 15.1017px;
+    line-height: 18px;
+
+    color: #FFF;
+}
+
+.thankyou__stripe{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 50px;
+
+    width: 100%;
+    height: 31px;
+
+    background-color: #f9f9f9;
+}
+
+.thankyou__stripe p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    margin-top: 6px;
+
+
+    color: #212529;
+
+    text-align: center;
+}
+
+.thankyou-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 129px;
+}
+
+.thankyou-footer__container{
+    align-items: center;
+}
+
+.stripe-text-divider, .stripe-text-divider2{
+    display: none;
+}
+
+.thankyou-footer__logo{
+    margin-top: 0;
+}
+
+.thankyou-footer__privacy{
+    margin-top: 0;
+}
+
+.thankyou-footer__year{
+    margin-top: 0;
+}
+
+
+.footer__button-back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    height: 50px;
+
+    background: var(--main-color);
+    color: #fff;
+}
+
+
+@media all and (max-width: 860px) {
+    .thankyou__block{
+        width: 490px;
+        height: 290px;
+    }
+
+    
+    .thankyou__text{
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+
+    .thankyou__stripe{
+        margin-top: 50px;
+
+        padding-left: 20px;
+    }
+
+    .thankyou__stripe p{
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .header {
+        margin-top: 0px;
+    }
+
+    .header__button{
+        margin-right: 12px;
+    }
+
+    .header__logo-mobile {
+        margin-left: 0px;
+    }
+
+    .thankyou-footer{
+        margin-top: 41px;
+    }
+
+    .thankyou-footer__container{
+        flex-direction: column;
+    }
+
+    .thankyou-footer__privacy{
+        margin-top: 58px;
+    }
+    
+    .thankyou-footer__year{
+        margin-top: 58px;
+    }
+}
+
+@media all and (max-width: 650px) {
+    .thankyou__block{
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .thankyou__block{
+        width: 100%;
+        height: 400px;
+    }
+
+    .thankyou__stripe{
+        margin-top: 50px;
+        height: 50px;
+    }
+
+    .stripe-text-divider{
+        display: block;
+    }
+}
+
+@media all and (max-width: 470px) {
+    .thankyou__text{
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 370px) {
+ 
+
+    .thankyou__stripe{
+        margin-top: 100px;
+        height: 75px;
+    }
+
+    .stripe-text-divider2{
+        display: block;
+    }
+}
+
+@media all and (max-width: 300px) {
+    .thankyou__block{
+        height: 450px;
+        padding: 20px;
+    }
+}

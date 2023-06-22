@@ -1,0 +1,38 @@
+.firstt{
+    width: 100%;
+
+    border: none;
+}
+
+.firstt .formHeader{
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+
+    text-align: center;
+
+    color: #1B300B;
+}
+
+.firstt input, .firstt .countryFlag{
+    margin-top: 20px;
+
+    height: 50px;
+
+    font-size: 21px;
+}
+
+.firstt .leadSubmit{
+    width: 100%;
+    height: 60px;
+
+    background-color: var(--main-color);
+
+    font-size: 21px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+}

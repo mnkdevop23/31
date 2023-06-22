@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AEPROJECTS</title>
+    <link rel="canonical" href="http://aeprojects.ru" />
+    <link
+      href="npm/bootstrap-5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="FormGlfin/leadForm.css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/leadform.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.unitedmarkets.cc/build/bundle.css?v=1637321581" />
+  </head>
+  <body>
+    <div id="form-popup" class="form-popup">
+      <div class="form-popup-bg" onclick="closeFormPopup()"></div>
+      <div class="form-popup-block">
+        <div class="form-popup-block-upper">
+          <p class="form-popup-closer" onclick="closeFormPopup()">✕</p>
+        </div>
+        <div id="form-register-lead"></div>
+        <div class="form-popup-check-group">
+          <input type="checkbox" class="form-popup-check" checked />
+          <p class="form-popup-check-text">
+            Я согласен с
+            <a class="form-popup-check-text-link" href="privacy.html"
+              >правилами сервиса</a
+            >
+            и
+            <a class="form-popup-check-text-link" href="privacy.html"
+              >политикой конфиденциальности</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="menu-popup" class="menu-popup">
+      <div class="menu-popup__upper">
+        <img class="menu-popup__logo" src="img/logo.svg" alt="logo" />
+        <p class="menu-popup__closer" onclick="closeMenuPopup()">✕</p>
+      </div>
+      <div class="menu-popup__links">
+        <a class="menu-popup__link" href="#work" onclick="closeMenuPopup()"
+          >Как работает</a
+        >
+        <a class="menu-popup__link" href="#ready" onclick="closeMenuPopup()"
+          >Как начать</a
+        >
+        <a class="menu-popup__link" href="#advisors" onclick="closeMenuPopup()"
+          >Готовые роботы</a
+        >
+        <a class="menu-popup__link" href="#features" onclick="closeMenuPopup()"
+          >О нас</a
+        >
+      </div>
+    </div>
+    <header id="header" class="header">
+      <div class="header__container container-local">
+        <img src="img/logo.svg" alt="logo" class="header__logo" />
+        <div class="header__right">
+          <nav class="header__nav">
+            <a class="header__nav-link" href="#work" onclick="closeMenuPopup()"
+              >Как работает</a
+            >
+            <a class="header__nav-link" href="#ready" onclick="closeMenuPopup()"
+              >Как начать</a
+            >
+            <a
+              class="header__nav-link"
+              href="#advisors"
+              onclick="closeMenuPopup()"
+              >Готовые роботы</a
+            >
+            <a
+              class="header__nav-link"
+              href="#features"
+              onclick="closeMenuPopup()"
+              >О нас</a
+            >
+          </nav>
+          <div
+            class="header__button"
+            onclick="openFormPopup(); closeMenuPopup()">
+            Получить робота
+          </div>
+        </div>
+        <div class="header__burger" onclick="openMenuPopup()">
+          <div class="header__burger-line"></div>
+          <div class="header__burger-line"></div>
+          <div class="header__burger-line"></div>
+        </div>
+      </div>
+    </header>
+    <section class="main">
+      <div class="main__container container-local">
+        <div class="main__left">
+          <div class="main__text-block">
+            <h1 class="main__title">Время доверить трейдинг роботам!</h1>
+            <p class="main__subtitle">
+              Мы создаем автоматизированные математические алгоритмы
+              искусственного интеллекта для точной и прибыльной торговли на
+              бирже
+            </p>
+          </div>
+          <div class="main__buttons">
+            <div class="main__button main__button1" onclick="openFormPopup()">
+              Получить консультацию
+            </div>
+            <div class="main__button main__button2" onclick="openFormPopup()">
+              Получить робота
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="main__img" src="img/main.jpg" alt="main" />
+    </section>
+    <section class="advantages">
+      <div class="advantages__container container-local">
+        <div class="advantages__cards">
+          <div class="advantages__card">
+            <img
+              class="advantages__card-img"
+              src="img/advantages1.png"
+              alt="advantages1" />
+            <h4 class="advantages__card-title">Экономия времени</h4>
+            <p class="advantages__card-text">
+              Используйте готовые роботы и конструктор торговых стратегий
+            </p>
+          </div>
+          <div class="advantages__card">
+            <img
+              class="advantages__card-img"
+              src="img/advantages4.png"
+              alt="advantages4" />
+            <h4 class="advantages__card-title">Безопасно</h4>
+            <p class="advantages__card-text">
+              Созданные торговые стратегии хранятся на вашем компьютере
+            </p>
+          </div>
+          <div class="advantages__card">
+            <img
+              class="advantages__card-img"
+              src="img/advantages2.png"
+              alt="advantages2" />
+            <h4 class="advantages__card-title">Всё онлайн</h4>
+            <p class="advantages__card-text">
+              Работа со стратегиямии биржевыми данными в удобном интерфейсе
+            </p>
+          </div>
+          <div class="advantages__card">
+            <img
+              class="advantages__card-img"
+              src="img/advantages3.png"
+              alt="advantages3" />
+            <h4 class="advantages__card-title">Бесплатно</h4>
+            <p class="advantages__card-text">
+              Весь функционал, включая автоматическую интеграцию в терминале
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="work" class="work">
+      <div class="work__container container-local">
+        <h2 class="work__title">Как работают торговые роботы</h2>
+        <p class="work__text">
+          Анализируя биржевые данные, роботы определяют лучшие моменты для
+          покупки и продажи ценных бумаг
+        </p>
+        <div class="work__cards">
+          <div class="work__card work__card1">
+            <img
+              class="work__card-img work__card-img1"
+              src="img/work1.png"
+              alt="work1" />
+            <div class="work__card-group work__card-group1">
+              <h3 class="work__card-title">В режиме «Робот»</h3>
+              <p class="work__card-text">
+                Робот самостоятельно отправляет брокеру поручения на покупку и
+                продажу. Вы контролирует результаты его работы.
+              </p>
+            </div>
+          </div>
+          <div class="work__card work__card2">
+            <img
+              class="work__card-img work__card-img2 work__card-img2-desktop"
+              src="img/work2.png"
+              alt="work2" />
+            <div class="work__card-group work__card-group2">
+              <h3 class="work__card-title work__card-title2">
+                В режиме «Советник»
+              </h3>
+              <p class="work__card-text">
+                Робот присылает уведомление с советами в мобильный и
+                стационарный терминал. Вы принимаете окончательное решение о
+                покупке и продаже активов.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="results">
+      <img class="results__bg" src="img/results-bg.png" alt="results-bg" />
+      <div class="results__container container-local">
+        <p class="results__bg-text">Результаты</p>
+        <div class="results__left">
+          <h2 class="results__title">Наши результаты</h2>
+          <div class="results__buttons">
+            <div
+              class="results__button results__button1"
+              onclick="openFormPopup()">
+              Получить консультацию
+            </div>
+            <div
+              class="results__button results__button2"
+              onclick="openFormPopup()">
+              Получить робота
+            </div>
+          </div>
+        </div>
+        <div class="results__right">
+          <img
+            class="results__img"
+            src="img/results-img.png"
+            alt="results-img" />
+        </div>
+      </div>
+    </section>
+    <section class="solutions">
+      <div class="solutions__container container-local">
+        <h2 class="solutions__title">Используйте готовые решения</h2>
+        <div class="solutions__card">
+          <div class="solutions__left">
+            <img
+              id="solutions__img"
+              class="solutions__img"
+              src="img/solutions-img.png"
+              alt="solutions-img" />
+          </div>
+          <div class="solutions__right">
+            <div class="solutions__buttons">
+              <div
+                id="solutions__button1"
+                class="solutions__button solutions__button1 solutions__button--active"
+                onclick="firstSolution()">
+                Роботы для Форекс
+              </div>
+              <div
+                id="solutions__button2"
+                class="solutions__button solutions__button2"
+                onclick="secondSolution()">
+                Роботы для криптовалют
+              </div>
+            </div>
+            <div id="solutions__text1" class="solutions__text solutions__text1">
+              <p class="solutions__paragraph">
+                Оповещения об экономических событиях
+              </p>
+              <p class="solutions__paragraph">Разблокированная цена входа</p>
+              <p class="solutions__paragraph">
+                Ежедневно отправляется до 10 сигналов
+              </p>
+              <p class="solutions__paragraph">81% успеха</p>
+              <p class="solutions__paragraph">Вход, тейк-профит и стоп-лосс</p>
+              <p class="solutions__paragraph">Сумма риска на сделку</p>
+              <p class="solutions__paragraph">
+                Соотношение вознаграждения за риск
+              </p>
+              <p class="solutions__paragraph">Приватные VIP чаты</p>
+            </div>
+            <div id="solutions__text2" class="solutions__text solutions__text2">
+              <p class="solutions__paragraph">
+                Оповещения об экономических событиях
+              </p>
+              <p class="solutions__paragraph">Разблокированная цена входа</p>
+              <p class="solutions__paragraph">
+                Ежедневно отправляется до 20 сигналов
+              </p>
+              <p class="solutions__paragraph">86% успеха</p>
+              <p class="solutions__paragraph">Вход, тейк-профит и стоп-лосс</p>
+              <p class="solutions__paragraph">Сумма риска на сделку</p>
+              <p class="solutions__paragraph">
+                Соотношение вознаграждения за риск
+              </p>
+              <p class="solutions__paragraph"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="ready" class="ready">
+      <img class="ready__bg" src="img/ready-bg.png" alt="ready-bg" />
+      <p class="ready__bg-text">Ready?</p>
+      <div class="ready__container container-local">
+        <div class="ready__text-group">
+          <h2 class="ready__title">Готовы начать?</h2>
+          <p class="ready__text">
+            Независимо от того, являетесь ли вы разработчиком, мерчантом,
+            конечным пользователем или покупателем окон, мы приветствуем вас в
+            сообществе.
+          </p>
+          <p class="ready__registraion" onclick="openFormPopup()">
+            Зарегистрируйтесь
+          </p>
+        </div>
+        <div class="ready__cards">
+          <div class="ready__card">
+            <div class="ready__card-upper">
+              <p class="ready__card-number">1</p>
+              <p class="ready__card-step">шаг</p>
+              <div class="ready__card-line"></div>
+            </div>
+            <h3 class="ready__card-title">Установите</h3>
+            <p class="ready__card-text">
+              Установите робота на торговую платформу через нашего менеджера. Он
+              свяжется с Вами по телефону.
+            </p>
+            <img
+              class="ready__card-img1 ready__card-img"
+              src="img/ready-card1.png"
+              alt="ready-card1" />
+          </div>
+          <div class="ready__card">
+            <div class="ready__card-upper">
+              <p class="ready__card-number">2</p>
+              <p class="ready__card-step">шаг</p>
+              <div class="ready__card-line"></div>
+            </div>
+            <h3 class="ready__card-title">Протестировать</h3>
+            <p class="ready__card-text">
+              Протестируйте роботов, чтобы выбрать подходящего по доходности и
+              риску с вашим личным менеджером.
+            </p>
+            <img
+              class="ready__card-img2 ready__card-img"
+              src="img/ready-card2.png"
+              alt="ready-card2" />
+          </div>
+          <div class="ready__card">
+            <div class="ready__card-upper">
+              <p class="ready__card-number">3</p>
+              <p class="ready__card-step">шаг</p>
+              <div class="ready__card-line"></div>
+            </div>
+            <h3 class="ready__card-title">Подключить к счету</h3>
+            <p class="ready__card-text">
+              Подключите робота к личному счету. Вас будет сопровождать личный
+              менеджер
+            </p>
+            <img
+              class="ready__card-img3 ready__card-img"
+              src="img/ready-card3.png"
+              alt="ready-card3" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="advisors" class="advisors">
+      <div class="advisors__container container-local">
+        <div class="advisors__title-holder">
+          <h2 class="advisors__title">
+            Представляем вам топ-3 наиболее эффективных роботизированных
+            советника. Всех роботов можно протестировать совершенно бесплатно. К
+            каждому роботу прилагается инструкция по его установке в торговой
+            платформе.
+          </h2>
+        </div>
+        <div class="advisors__cards">
+          <div class="advisors__card">
+            <p class="advisors__suptitle">Самый новый</p>
+            <h3 class="advisors__card-title">R Smart Machine 2.2</h3>
+            <div class="advisors__row">
+              <p class="advisors__text">
+                Комплекс торговых индикаторов с защитой от волатильности,
+                таймфреймы: М1-H1, торговые инструменты: валюта и металлы.
+              </p>
+              <img
+                class="advisors__img"
+                src="img/advisors1.png"
+                alt="advisors" />
+            </div>
+            <div class="advisors__button-holder">
+              <div
+                class="advisors__button advisors__button1"
+                onclick="openFormPopup()">
+                Попробовать
+              </div>
+            </div>
+          </div>
+          <div class="advisors__card advisors__card2">
+            <p class="advisors__suptitle">Самый надежный</p>
+            <h3 class="advisors__card-title">EA Smart Machine 3.0</h3>
+            <div class="advisors__row">
+              <p class="advisors__text">
+                На основе индикаторов с применением VSA анализа, таймфреймы:
+                М5-М15, торговые инструменты: биржевые индексы, валюта и сырье.
+              </p>
+              <img
+                class="advisors__img"
+                src="img/advisors2.png"
+                alt="advisors" />
+            </div>
+            <div class="advisors__button-holder">
+              <div
+                class="advisors__button advisors__button2"
+                onclick="openFormPopup()">
+                Попробовать
+              </div>
+            </div>
+          </div>
+          <div class="advisors__card">
+            <p class="advisors__suptitle">Самый профессиональный</p>
+            <h3 class="advisors__card-title">Deluxe Income Full</h3>
+            <div class="advisors__row">
+              <p class="advisors__text">
+                Комплекс индикаторов с гибким функционалом настройки,
+                таймфреймы: от М1, торговые инструменты: акции, биржевые
+                индексы, валюта и сырье.
+              </p>
+              <img
+                class="advisors__img"
+                src="img/advisors3.png"
+                alt="advisors" />
+            </div>
+            <div class="advisors__button-holder">
+              <div
+                class="advisors__button advisors__button3"
+                onclick="openFormPopup()">
+                Попробовать
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- advisors__cards -->
+      </div>
+    </section>
+    <section class="roboadvising">
+      <img
+        class="roboadvising__bg"
+        src="img/roboadvising-bg.png"
+        alt="roboadvising-bg" />
+      <div class="roboadvising__container container-local">
+        <div class="roboadvising__left">
+          <h2 class="roboadvising__title">
+            Настоящее и будущее трейдинга – это робоэдвайзинг!
+          </h2>
+          <p class="roboadvising__text">
+            Робоэдвайзер – это автоматизированный роботизированный советник,
+            который с помощью заложенных в него математических алгоритмов
+            генерирует торговые сигналы в зависимости от текущей ситуации на
+            рынке, средств трейдера, его пожеланий по стратегии инвестиционного
+            поведения, уровням риска и предпочтений по секторам финансового
+            рынка. В 2017 году робоэдвайзерами по всему миру пользовались лишь
+            13 млн человек, а сейчас это число выросло в пять раз — до 70,5 млн
+            человек. Количество пользователей таких сервисов увеличивается более
+            чем на 50% в год. Такая динамика дает основания предполагать, что к
+            2023 году количество пользователей робоэдвайзеров достигнет 147 млн
+            человек!
+          </p>
+          <div class="roboadvising__button" onclick="openFormPopup()">
+            Попробовать
+          </div>
+        </div>
+        <div class="roboadvising__right">
+          <img
+            class="roboadvising__img"
+            src="img/roboadvising-img.png"
+            alt="roboadvising-img" />
+        </div>
+      </div>
+    </section>
+    <section id="features" class="features">
+      <div class="features__container container-local">
+        <div class="features__bg-holder">
+          <img
+            class="features__bg"
+            src="img/features-bg.png"
+            alt="features-bg" />
+        </div>
+        <div class="features__cards-row1 features__card1">
+          <div class="features__card">
+            <img
+              class="features__card-img"
+              src="img/features1.png"
+              alt="features1" />
+            <h3 class="features__card-title">Брокерские технологии</h3>
+            <p class="features__card-text">
+              Каждый наш робот – это результат работы команды финансовых
+              аналитиков, программистов и тестировщиков.
+            </p>
+          </div>
+          <div class="features__card features__card2">
+            <img
+              class="features__card-img"
+              src="img/features2.png"
+              alt="features2" />
+            <h3 class="features__card-title">Гарантия надежности</h3>
+            <p class="features__card-text">
+              Вы можете протестировать робота на демо-счете, чтобы проверить
+              заложенные показатели доходности.
+            </p>
+          </div>
+          <div class="features__card features__card3">
+            <img
+              class="features__card-img"
+              src="img/features3.png"
+              alt="features3" />
+            <h3 class="features__card-title">Рекомендации клиентов</h3>
+            <p class="features__card-text">
+              Более 70% пользователей наших роботов начали использовать их по
+              рекомендации других трейдеров.
+            </p>
+          </div>
+          <div class="features__card--fantom"></div>
+        </div>
+        <div class="features__cards-row--mobile">
+          <div class="features__card">
+            <img
+              class="features__card-img"
+              src="img/features4.png"
+              alt="features4" />
+            <h3 class="features__card-title">Надежные партнеры</h3>
+            <p class="features__card-text">
+              Среди наших партнеров только лицензированные биржевые и банковские
+              брокеры без конфликта интересов.
+            </p>
+          </div>
+          <div class="features__card">
+            <img
+              class="features__card-img"
+              src="img/features3.png"
+              alt="features3" />
+            <h3 class="features__card-title">Рекомендации клиентов</h3>
+            <p class="features__card-text">
+              Более 70% пользователей наших роботов начали использовать их по
+              рекомендации других трейдеров.
+            </p>
+          </div>
+        </div>
+        <div class="features__cards-row2">
+          <div class="features__card--fantom"></div>
+          <div class="features__card features__card4">
+            <img
+              class="features__card-img"
+              src="img/features4.png"
+              alt="features4" />
+            <h3 class="features__card-title">Надежные партнеры</h3>
+            <p class="features__card-text">
+              Среди наших партнеров только лицензированные биржевые и банковские
+              брокеры без конфликта интересов.
+            </p>
+          </div>
+          <div class="features__card features__card5">
+            <img
+              class="features__card-img"
+              src="img/features5.png"
+              alt="features5" />
+            <h3 class="features__card-title">Поддержка 24/5</h3>
+            <p class="features__card-text">
+              Для пользователей наших роботов доступна круглосуточная
+              техническая и аналитическая поддержка на 8 языках.
+            </p>
+          </div>
+          <div class="features__card features__card6">
+            <img
+              class="features__card-img"
+              src="img/features6.png"
+              alt="features6" />
+            <h3 class="features__card-title">Глобальное присутствие</h3>
+            <p class="features__card-text">
+              Наши роботы помогают торговать трейдерам из более чем 20 стран на
+              биржевых и внебиржевых рынках.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer" class="footer">
+      <div class="footer__container container-local">
+        <div class="footer__logo-group"></div>
+        <img class="footer__logo" src="img/logo-white.png" alt="logo" />
+        <div class="footer__text-group">
+          <p class="footer__text footer__text1">
+            Услуги на сайте предоставляются компанией Трейдинг Тайм Лимитед.
+          </p>
+          <p class="footer__text footer__text2">
+            Представительство Трейдинг Тайм Лимитед в Российской Федерации
+            осуществляет: SmartTraining Limited, Artemisia House, Floor 2, 59
+            Akropoleos Avenue Strovolos, 2084 Cyprus
+          </p>
+          <p class="footer__text footer__text3">
+            Согласно федеральному закону "О рынке ценных бумаг" от 22.04.1996N
+            39-ФЗ компания не осуществляет брокерскую деятельность и не
+            оказывает услуги Форекс дилинга. Компания осуществляет деятельность
+            только по предоставлению консультационных услуг по вопросам
+            финансового посредничества. Все материалы на сайте носят
+            исключительно информационный характер и не являются указанием к
+            действию. Представленные данные – это только предположения,
+            основанные на нашем опыте. Публикуемые результаты торговли
+            добавляются исключительно с целью демонстрации эффективности и не
+            являются заявлением доходности. Прошлые результаты не гарантируют
+            конкретных результатов в будущем. Проведение торговых операций на
+            финансовых рынках с маржинальными финансовыми инструментами имеет
+            высокий уровень риска, поэтому подходит не всем инвесторам. Вы
+            несёте полную ответственность за принятые торговые решения и
+            результат, полученный в ходе работы.
+          </p>
+        </div>
+        <div class="footer__cols">
+          <div class="footer__col1">
+            <h5 class="footer__contacts-title">Контакты</h5>
+            <p class="footer__contacts-text1 footer__contacts-text">
+              admin@mail.ru
+            </p>
+            <a href="privacy.html"
+              ><p class="footer__privacy">Политика конфиденциальности</p>
+            </a>
+          </div>
+          <div class="footer__col2">
+            <img
+              class="footer__img"
+              src="img/footer-img.png"
+              alt="footer-img" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/solutions-tabs.js"></script>
+    <script src="js/form-popups.js"></script>
+    <script src="js/menu-popup.js"></script>
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="npm/-popperjs/core-2.11.6/dist/umd/popper.min.js"></script>
+    <script src="npm/bootstrap-5.2.2/dist/js/bootstrap.min.js"></script>
+
+    <script
+      defer=""
+      src="https://cdn.unitedmarkets.cc/build/bundle.js?v=1637321581"></script>
+  </body>
+</html>
